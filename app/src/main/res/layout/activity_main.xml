@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/logo"
+        android:backgroundTint="@color/purple_200"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_user_field"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color_hint"/>
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="120dp"
+        android:layout_below="@id/user_field"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="130dp"/>
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_btn"
+        android:layout_marginTop="30dp"
+        android:ems="30"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_hint"
+        android:textSize="24sp" />
+
+</RelativeLayout>
